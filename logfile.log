@@ -1,0 +1,141 @@
+2018/04/11 00:24:59 [28566] main: FATAL: $VAR1 = \bless( {
+                   'password' => 'passroot',
+                   'config_type' => [
+                                      'db',
+                                      'file'
+                                    ],
+                   'destination_path' => '/usr/local/www/devops/',
+                   'optionfile' => 'config.txt',
+                   'config_file' => '/usr/local/www/config/',
+                   'source_path' => '/home/devops/work/',
+                   'cmd_check' => [
+                                    'grep '
+                                  ],
+                   'aplication' => undef,
+                   'cmd_start' => [
+                                    'java .. jar'
+                                  ],
+                   'cmd_stop' => [
+                                   'kill '
+                                 ],
+                   'logfile' => './logfile.log',
+                   'cmd_confdel' => [
+                                      'delete from db '
+                                    ],
+                   'config_db' => {
+                                    'user' => 'devop',
+                                    'pass' => 'devpass',
+                                    'table' => 'devconf',
+                                    'db' => 'test'
+                                  },
+                   'cmd_undeploy' => [
+                                       'rm '
+                                     ],
+                   'cmd_confsave' => [
+                                       'insert into db '
+                                     ],
+                   'hostname' => [
+                                   '192.168.1.100',
+                                   '192.168.1.101'
+                                 ],
+                   'username' => 'root',
+                   'action' => undef,
+                   'config' => 'config.txt',
+                   'cmd_deploy' => [
+                                     'git ..'
+                                   ]
+                 }, 'Config::Options::Threaded' );
+2018/04/11 08:26:40 [712] main: FATAL: $VAR1 = \bless( {
+                   'password' => 'passroot',
+                   'config_type' => [
+                                      'db',
+                                      'file'
+                                    ],
+                   'username' => 'root',
+                   'cmd_confdel' => [
+                                      'delete from db '
+                                    ],
+                   'config' => 'config.txt',
+                   'action' => undef,
+                   'cmd_stop' => [
+                                   'kill '
+                                 ],
+                   'aplication' => undef,
+                   'destination_path' => '/usr/local/www/devops/',
+                   'cmd_check' => [
+                                    'grep '
+                                  ],
+                   'cmd_confsave' => [
+                                       'insert into db '
+                                     ],
+                   'cmd_start' => [
+                                    'java .. jar'
+                                  ],
+                   'config_file' => '/usr/local/www/config/',
+                   'cmd_deploy' => [
+                                     'git ..'
+                                   ],
+                   'logfile' => './logfile.log',
+                   'config_db' => {
+                                    'db' => 'test',
+                                    'pass' => 'devpass',
+                                    'user' => 'devop',
+                                    'table' => 'devconf'
+                                  },
+                   'optionfile' => 'config.txt',
+                   'source_path' => '/home/devops/work/',
+                   'cmd_undeploy' => [
+                                       'rm '
+                                     ],
+                   'hostname' => [
+                                   '192.168.1.100',
+                                   '192.168.1.101'
+                                 ]
+                 }, 'Config::Options::Threaded' );
+2018/04/11 08:48:40 [1301] main: FATAL: $VAR1 = \bless( {
+                   'destination_path' => '/usr/local/www/devops/',
+                   'hostname' => [
+                                   '192.168.1.100',
+                                   '192.168.1.101'
+                                 ],
+                   'cmd_undeploy' => [
+                                       'rm '
+                                     ],
+                   'cmd_confdel' => [
+                                      'delete from db '
+                                    ],
+                   'optionfile' => 'config.txt',
+                   'config' => 'config.txt',
+                   'source_path' => '/home/devops/work/',
+                   'config_db' => {
+                                    'user' => 'devop',
+                                    'db' => 'test',
+                                    'table' => 'devconf',
+                                    'pass' => 'devpass'
+                                  },
+                   'aplication' => undef,
+                   'cmd_confsave' => [
+                                       'insert into db '
+                                     ],
+                   'username' => 'root',
+                   'cmd_start' => [
+                                    'java .. jar'
+                                  ],
+                   'logfile' => './logfile.log',
+                   'action' => undef,
+                   'cmd_check' => [
+                                    'grep '
+                                  ],
+                   'config_file' => '/usr/local/www/config/',
+                   'cmd_deploy' => [
+                                     'git ..'
+                                   ],
+                   'cmd_stop' => [
+                                   'kill '
+                                 ],
+                   'password' => 'passroot',
+                   'config_type' => [
+                                      'db',
+                                      'file'
+                                    ]
+                 }, 'Config::Options::Threaded' );
