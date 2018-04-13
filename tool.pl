@@ -40,13 +40,13 @@ Log::Log4perl->easy_init( {level   => $DEBUG,
 	file    => '>>'.$conffile->{logfile},
 	layout   => '%d [%P] %c: %p: %m%n' } );
 						       
-my $dev = Dev->new(%{$conf});  
+my $dev = Dev->new(conf=>$conffile);  
 			
 
 
 # say  Dumper \$conffile;
 print "\n\n MODULE \n\n";
-my ($msg, $errormsg) = $dev->deploy($conf);
+my ($msg, $errormsg) = $dev->check_depend();
 
 if ($errormsg) {
 	print "\n ERROR $errormsg \n ";

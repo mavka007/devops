@@ -1,21 +1,9 @@
 {
-hostname => ['192.168.1.100', '192.168.1.101'],
+hostname => '192.168.1.100',
 username => 'root',
 password => 'passroot',
 
-destination_path => '/usr/local/www/devops/',
-
-
-cmd_deploy => ['git ..'],
-cmd_undeploy => ['rm '],
-
-cmd_start => ['java .. jar'],
-cmd_stop => ['kill '],
-
-cmd_check => ['grep '],
-
-cmd_confsave => ['insert into db '],
-cmd_confdel => ['delete from db '],
+destination_path => '/opt/devops/',
 
 
 config_type => ['db','file'],
@@ -24,7 +12,7 @@ config_db => {'db' => 'test', 'user' => 'devop', 'pass' => 'devpass', 'table'
 => 'devconf' },
 
 
-source_path => '/home/devops/work/' ,
+source_path => '/home/mavka/Work/Perl/devops/script/' ,
 logfile => './logfile.log'
 
 
